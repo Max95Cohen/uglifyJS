@@ -1,0 +1,14 @@
+{
+  "name": "uglifyjs",
+  "version": "1.0.0",
+  "description": "uglifyJS example of config files",
+  "main": "in.js",
+  "scripts": {
+    "start": "uglifyjs in.js --config-file uglify.config.json -o out.js"
+  },
+  "author": "Max95Cohen",
+  "license": "ISC",
+  "devDependencies": {
+    "uglify-js": "^3.12.3"
+  }
+}
