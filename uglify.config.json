@@ -1,12 +1,16 @@
 {
-    "compress": true,
-    "mangle": {
-        "properties": {
-            "builtins": false,
-            "regex": null,
-            "reserved": ["reserved_variable"]
-        },
-        "reserved": ["names"]
+  "compress": true,
+  "mangle": {
+    "properties": {
+      "builtins": false,
+      "regex": null,
+      "reserved": [
+        "reserved_variable"
+      ]
     },
-    "toplevel": true
+    "reserved": [
+      "names"
+    ]
+  },
+  "toplevel": true
 }

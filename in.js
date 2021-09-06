@@ -46,3 +46,17 @@
         div.style.height = ah + 'px';
     });
 })();
+
+function User(name) {
+    this.name = name;
+
+    this.sayHi = function() {
+        alert( "Hi " + this.name );
+    };
+}
+
+let Aibek = new User("Aibek");
+let Baibek = new User("Baibek");
+
+Aibek.sayHi();
+Baibek.sayHi();
