@@ -11,7 +11,8 @@ const options = {
         },
         "reserved": ["names"]
     },
-    "toplevel": true
+    "toplevel": true,
+    "nameCache": {}
 };
 
 const closeJS = UglifyJS.minify(fs.readFileSync("./src/test.js", "utf8"), options);
