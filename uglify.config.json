@@ -1,15 +1,22 @@
 {
-  "compress": true,
+  "compress": {
+    "top_retain": [
+      "unUsedFunction"
+    ]
+  },
   "mangle": {
     "properties": {
       "builtins": false,
       "regex": null,
       "reserved": [
-        "reserved_variable"
+        "reserved_variable",
+        "unUsedProperty"
       ]
     },
     "reserved": [
-      "names"
+      "names",
+      "unUsedFunction",
+      "unUsedVariable"
     ]
   },
   "toplevel": true
