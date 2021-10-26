@@ -1,7 +1,7 @@
-const fs = require('fs');
-const UglifyJS = require('uglify-js');
+var fs = require('fs');
+var UglifyJS = require('uglify-js');
 
-const options = {
+var options = {
     "compress": true,
     "mangle": {
         "properties": {
@@ -15,6 +15,6 @@ const options = {
     "nameCache": {}
 };
 
-const closeJS = UglifyJS.minify(fs.readFileSync("./src/test.js", "utf8"), options);
+var closeJS = UglifyJS.minify(fs.readFileSync("./src/test.js", "utf8"), options);
 
 fs.writeFileSync("./dist/test.js", closeJS.code, "utf8");
