@@ -9,7 +9,7 @@
       "builtins": false,
       "regex": null,
       "reserved": [
-        "reserved_variable",
+        "reservedVariable",
         "unUsedProperty"
       ]
     },
