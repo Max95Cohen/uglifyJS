@@ -14,12 +14,15 @@ var document_ = document,
         },
         test: function () {
             console.log('Person', this.name, this.name_);
+            console.log('Items', this.items.item, this.items_.item_);
         },
         test_: function () {
             console.log('Person', this.name, this.name_);
         },
         unUsedProperty: 'unUsedProperty'
     };
+
+    console.dir(Person);
 
     Person.test();
 
