@@ -14,10 +14,11 @@
       ]
     },
     "reserved": [
-      "names",
+      "names111",
       "unUsedFunction",
       "unUsedVariable"
     ]
   },
-  "toplevel": true
+  "toplevel": true,
+  "nameCache": {}
 }

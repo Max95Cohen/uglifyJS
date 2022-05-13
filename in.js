@@ -1,3 +1,6 @@
+var document_ = document,
+    window_ = window;
+
 (function () {
     var Person = {
         name: "Aibek",
@@ -57,11 +60,11 @@
 
     window.perform = root.api.perform;
 
-    document.addEventListener("click", function () {
-        var div = document.createElement("div");
+    document_.addEventListener("click", function () {
+        var div = document_.createElement("div");
         var ah = window.screen.availHeight / 2;
 
-        document.body.appendChild(div);
+        document_.body.appendChild(div);
 
         div.style.height = ah + "px";
         div.style.background = '#f00';
@@ -93,3 +96,7 @@ Aibek.sayHi();
 Aibek.test();
 
 Aibek2.sayHi();
+
+document_.addEventListener('DOMContentLoaded', function () {
+    window_.alert('DOM');
+});
